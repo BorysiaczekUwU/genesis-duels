@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Główny - Genesis Duels</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="user-info">
+            <img src="assets/default.png" alt="Avatar" class="avatar">
+            <span id="username-display"></span>
+        </div>
+        <nav>
+            <button id="nav-collection">Kolekcja</button>
+            <button id="nav-shop">Sklep</button>
+            <button id="nav-play">Graj</button>
+        </nav>
+        <div class="currency">
+            <span>Kredyty: <span id="credits-display">0</span></span>
+            <span>Kryształy: <span id="shards-display">0</span></span>
+        </div>
+        <button id="logout-btn">Wyloguj</button>
+    </header>
+
+    <main id="main-content">
+        <!-- Tutaj będą renderowane widoki (kolekcja, sklep, etc.) -->
+        <div class="welcome-message">
+            <h2>Witaj w The Void Nexus!</h2>
+            <p>Wybierz jedną z opcji powyżej, aby rozpocząć.</p>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Przykład inicjalizacji
+        document.addEventListener('DOMContentLoaded', () => {
+             // Main.initDashboard(); // Funkcja do zaimplementowania w main.js
+        });
+    </script>
+</body>
+</html>

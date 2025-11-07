@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Arena - Genesis Duels</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="game-body">
+    <div id="game-arena">
+        <!-- Gracz 2 (Przeciwnik) -->
+        <div class="player-area opponent-area">
+            <div class="player-info">
+                <span id="opponent-name">Przeciwnik</span>
+                <span>HP: <span id="opponent-hp">30</span></span>
+                <span>Mana: <span id="opponent-mana">1</span></span>
+            </div>
+            <div class="hand opponent-hand">
+                <!-- Karty przeciwnika (ukryte) -->
+                <div class="card-back"></div>
+                <div class="card-back"></div>
+            </div>
+            <div class="board opponent-board">
+                <!-- Stwory przeciwnika na planszy -->
+            </div>
+        </div>
+
+        <!-- Plansza Środkowa -->
+        <div class="center-area">
+            <button id="end-turn-btn" disabled>Zakończ turę</button>
+        </div>
+
+        <!-- Gracz 1 (Ty) -->
+        <div class="player-area player-area-self">
+            <div class="board self-board">
+                <!-- Twoje stwory na planszy -->
+            </div>
+            <div class="hand self-hand" id="player-hand">
+                <!-- Twoje karty na ręce -->
+            </div>
+            <div class="player-info">
+                <span id="player-name">Gracz</span>
+                <span>HP: <span id="player-hp">30</span></span>
+                <span>Mana: <span id="player-mana">1</span></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/gameplay.js"></script>
+    <script>
+        // Inicjalizacja logiki gry
+        document.addEventListener('DOMContentLoaded', () => {
+            // Gameplay.init(sessionId); // sessionId przekazane z matchmakingu
+        });
+    </script>
+</body>
+</html>
